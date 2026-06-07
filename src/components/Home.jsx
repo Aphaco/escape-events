@@ -378,7 +378,7 @@ function Home() {
         <div className="hero-content">
           <motion.div className="hero-text-block" initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}>
             <p className="eyebrow eyebrow-light"><Star size={12} /> Luxury Event Planning &amp; Design</p>
-            <h1>Escape<br />Events</h1>
+            <h1>no cape<br />Events</h1>
             <p className="hero-subtitle">Crafting unforgettable experiences with emotion, intention, and timeless attention to detail.</p>
             <a href="#consultation" className="btn btn-primary" onClick={(e) => handleNavClick(e, "#consultation")}>Start Planning <ArrowUpRight size={15} /></a>
           </motion.div>
