@@ -28,6 +28,7 @@ import img11 from "../images/gal4.jpg";
 import img12 from "../images/gal12.png";
 import img13 from "../images/gal13.jpg";
 import img14 from "../images/gal13.png";
+import img15 from "../images/gal1.png";
 import logo from "../images/logo.png";
 
 /* ============================================================
@@ -250,15 +251,15 @@ function Home() {
   // ========================
   const galleryImages = [
     // SOCIAL EVENTS - Weddings
-    { id: 1, category: "social", subcategory: "weddings", src: img2, span: "large", label: "Luxury Wedding" },
+    { id: 1, category: "social", subcategory: "weddings", src: img9, span: "large", label: "Luxury Wedding" },
     { id: 2, category: "social", subcategory: "weddings", src: img3, span: "large", label: "Romantic Ceremony" },
     { id: 3, category: "social", subcategory: "weddings", src: img14, span: "wide", label: "Elegant Reception" },
     // SOCIAL EVENTS - Birthday Celebrations
     { id: 4, category: "social", subcategory: "birthday", src: img4, span: "wide", label: "Milestone Birthday" },
     { id: 5, category: "social", subcategory: "birthday", src: img8, span: "large", label: "Birthday Gala" },
-    // SOCIAL EVENTS - Bridal Showers
-    { id: 6, category: "social", subcategory: "bridal shower", src: img5, span: "wide", label: "Bridal Shower" },
-    { id: 7, category: "social", subcategory: "bridal shower", src: img9, span: "large", label: "Bridal Brunch" },
+    // SOCIAL EVENTS - Baby Naming Ceremony
+    { id: 6, category: "social", subcategory: "Baby Unveiling", src: img5, span: "wide", label: "Baby Unveiling" },
+    { id: 7, category: "social", subcategory: "Baby Unveiling", src: img9, span: "large", label: "Baby Unveiling" },
     // SOCIAL EVENTS - Private Dinners
     { id: 8, category: "social", subcategory: "private dinner", src: img10, span: "wide", label: "Private Dinner" },
     { id: 9, category: "social", subcategory: "private dinner", src: img11, span: "large", label: "Intimate Dining" },
@@ -269,10 +270,10 @@ function Home() {
     { id: 12, category: "social", subcategory: "anniversary", src: img7, span: "wide", label: "Anniversary Celebration" },
     { id: 13, category: "social", subcategory: "anniversary", src: img13, span: "large", label: "Golden Anniversary" },
     // CORPORATE EVENTS - Brand Launches
-    { id: 14, category: "corporate", subcategory: "brand launch", src: img1, span: "wide", label: "Brand Launch" },
-    { id: 15, category: "corporate", subcategory: "brand launch", src: img4, span: "large", label: "Product Launch" },
+    { id: 14, category: "corporate", subcategory: "brand launch", src: img2, span: "wide", label: "Brand Launch" },
+    { id: 15, category: "corporate", subcategory: "brand launch", src: img14, span: "large", label: "Product Launch" },
     // CORPORATE EVENTS - Networking Events
-    { id: 16, category: "corporate", subcategory: "networking", src: img5, span: "wide", label: "Networking Event" },
+    { id: 16, category: "corporate", subcategory: "networking", src: img2, span: "wide", label: "Networking Event" },
     { id: 17, category: "corporate", subcategory: "networking", src: img8, span: "large", label: "Industry Mixer" },
     // CORPORATE EVENTS - Conferences
     { id: 18, category: "corporate", subcategory: "conference", src: img2, span: "wide", label: "Executive Conference" },
@@ -289,7 +290,7 @@ function Home() {
     social: [
       { key: "weddings", display: "Weddings" },
       { key: "birthday", display: "Birthday Celebrations" },
-      { key: "bridal shower", display: "Bridal Showers" },
+      { key: "Baby Unveiling", display: "Baby Unveiling" },
       { key: "private dinner", display: "Private Dinners" },
       { key: "engagement", display: "Engagement Parties" },
       { key: "anniversary", display: "Anniversary Celebrations" },
