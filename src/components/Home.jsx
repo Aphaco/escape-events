@@ -21,14 +21,16 @@ import img4 from "../images/Page3.png";
 import img5 from "../images/gal10.png";
 import img6 from "../images/gal6.jpg";
 import img7 from "../images/gal10.png";
-import img8 from "../images/gal8.jpg";
-import img9 from "../images/gal9.jpg";
+import img8 from "../images/gal8.png";
+import img9 from "../images/gal9.png";
 import img10 from "../images/gal5.jpg";
 import img11 from "../images/gal4.jpg";
 import img12 from "../images/gal12.png";
 import img13 from "../images/gal13.jpg";
 import img14 from "../images/gal13.png";
-import img15 from "../images/gal1.png";
+import img15 from "../images/gal15.png";
+import img17 from "../images/gal17.png";
+import img18 from "../images/gal18.png";
 import logo from "../images/logo.png";
 
 /* ============================================================
@@ -258,17 +260,17 @@ function Home() {
     { id: 4, category: "social", subcategory: "birthday", src: img4, span: "wide", label: "Milestone Birthday" },
     { id: 5, category: "social", subcategory: "birthday", src: img8, span: "large", label: "Birthday Gala" },
     // SOCIAL EVENTS - Baby Naming Ceremony
-    { id: 6, category: "social", subcategory: "Baby Unveiling", src: img5, span: "wide", label: "Baby Unveiling" },
-    { id: 7, category: "social", subcategory: "Baby Unveiling", src: img9, span: "large", label: "Baby Unveiling" },
+    { id: 6, category: "social", subcategory: "Sophisticated Soirée", src: img15, span: "large", label: "Luxe Tablescape" },
+    { id: 7, category: "social", subcategory: "Glam Dinner", src: img5, span: "large", label: "Glam Dinner" },
     // SOCIAL EVENTS - Private Dinners
-    { id: 8, category: "social", subcategory: "private dinner", src: img10, span: "wide", label: "Private Dinner" },
+    { id: 8, category: "social", subcategory: "private dinner", src: img13, span: "wide", label: "Private Dinner" },
     { id: 9, category: "social", subcategory: "private dinner", src: img11, span: "large", label: "Intimate Dining" },
     // SOCIAL EVENTS - Engagement Parties
     { id: 10, category: "social", subcategory: "engagement", src: img6, span: "large", label: "Engagement Party" },
     { id: 11, category: "social", subcategory: "engagement", src: img12, span: "wide", label: "Proposal Celebration" },
     // SOCIAL EVENTS - Anniversary Celebrations
-    { id: 12, category: "social", subcategory: "anniversary", src: img7, span: "wide", label: "Anniversary Celebration" },
-    { id: 13, category: "social", subcategory: "anniversary", src: img13, span: "large", label: "Golden Anniversary" },
+    { id: 12, category: "social", subcategory: "anniversary", src: img18, span: "large", label: "Birthday Glam" },
+    { id: 13, category: "social", subcategory: "anniversary", src: img17, span: "large", label: "Golden Anniversary" },
     // CORPORATE EVENTS - Brand Launches
     { id: 14, category: "corporate", subcategory: "brand launch", src: img2, span: "wide", label: "Brand Launch" },
     { id: 15, category: "corporate", subcategory: "brand launch", src: img14, span: "large", label: "Product Launch" },
