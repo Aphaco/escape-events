@@ -19,7 +19,7 @@ import img2 from "../images/gal3.png";
 import img3 from "../images/gal6.jpg";
 import img4 from "../images/Page3.png";
 import img5 from "../images/gal10.png";
-import img6 from "../images/gal6.jpg";
+import img6 from "../images/gal21.jpg";
 import img7 from "../images/gal10.png";
 import img8 from "../images/gal8.png";
 import img9 from "../images/gal9.png";
@@ -33,6 +33,8 @@ import img17 from "../images/gal17.png";
 import img18 from "../images/gal18.png";
 import img19 from "../images/gal19.png";
 import img20 from "../images/gal1.png";
+import img21 from "../images/gal21.png";
+import img22 from "../images/gal22.png";
 import logo from "../images/logo.png";
 
 /* ============================================================
@@ -266,11 +268,11 @@ function Home() {
     { id: 6, category: "social", subcategory: "Sophisticated Soirée", src: img15, span: "large", label: "Luxe Tablescape" },
     { id: 7, category: "social", subcategory: "Glam Dinner", src: img5, span: "large", label: "Glam Dinner" },
     // SOCIAL EVENTS - Private Dinners
-    { id: 8, category: "social", subcategory: "private dinner", src: img13, span: "wide", label: "Private Dinner" },
-    { id: 9, category: "social", subcategory: "private dinner", src: img11, span: "large", label: "Intimate Dining" },
+    { id: 8, category: "social", subcategory: "private dinner", src: img13, span: "large", label: "Private Dinner" },
+    { id: 9, category: "social", subcategory: "private dinner", src: img21, span: "large", label: "Luxe Dinner" },
     // SOCIAL EVENTS - Engagement Parties
     { id: 10, category: "social", subcategory: "engagement", src: img6, span: "large", label: "Engagement Party" },
-    { id: 11, category: "social", subcategory: "engagement", src: img12, span: "wide", label: "Proposal Celebration" },
+    { id: 11, category: "social", subcategory: "engagement", src: img12, span: "large", label: "Proposal Celebration" },
     // SOCIAL EVENTS - Anniversary Celebrations
     { id: 12, category: "social", subcategory: "anniversary", src: img18, span: "large", label: "Birthday Glam" },
 
@@ -278,11 +280,11 @@ function Home() {
    
 
     // CORPORATE EVENTS - Networking Events
-    { id: 18, category: "corporate", subcategory: "conference", src: img2, span: "wide", label: "Executive Conference" },
+    { id: 18, category: "corporate", subcategory: "conference", src: img2, span: "large", label: "Executive Conference" },
 
     // CORPORATE EVENTS - Team Experiences
     { id: 21, category: "corporate", subcategory: "team experience", src: img20, span: "large", label: "Corporate Retreat" },
-    { id: 20, category: "corporate", subcategory: "team experience", src: img3, span: "large", label: "Team Building" },
+    // { id: 20, category: "corporate", subcategory: "team experience", src: img22, span: "large", label: "Team Building" },
     // CORPORATE EVENTS - End of Year Celebrations
 
   ];
