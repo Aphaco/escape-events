@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 import "../styles/global.css";
-import "../styles/home.css";
+import "../styles/Home.css";
 
 import img1 from "../images/he1.png";
 import img2 from "../images/gal3.png";
@@ -31,6 +31,8 @@ import img14 from "../images/gal13.png";
 import img15 from "../images/gal15.png";
 import img17 from "../images/gal17.png";
 import img18 from "../images/gal18.png";
+import img19 from "../images/gal19.png";
+import img20 from "../images/gal1.png";
 import logo from "../images/logo.png";
 
 /* ============================================================
@@ -258,7 +260,8 @@ function Home() {
     { id: 3, category: "social", subcategory: "weddings", src: img14, span: "wide", label: "Elegant Reception" },
     // SOCIAL EVENTS - Birthday Celebrations
     { id: 4, category: "social", subcategory: "birthday", src: img4, span: "wide", label: "Milestone Birthday" },
-    { id: 5, category: "social", subcategory: "birthday", src: img8, span: "large", label: "Birthday Gala" },
+    // { id: 5, category: "social", subcategory: "birthday", src: img8, span: "large", label: "Birthday Gala" },
+    { id: 5, category: "social", subcategory: "birthday", src: img19, span: "large", label: "Birthday Bash" },
     // SOCIAL EVENTS - Baby Naming Ceremony
     { id: 6, category: "social", subcategory: "Sophisticated Soirée", src: img15, span: "large", label: "Luxe Tablescape" },
     { id: 7, category: "social", subcategory: "Glam Dinner", src: img5, span: "large", label: "Glam Dinner" },
@@ -270,39 +273,35 @@ function Home() {
     { id: 11, category: "social", subcategory: "engagement", src: img12, span: "wide", label: "Proposal Celebration" },
     // SOCIAL EVENTS - Anniversary Celebrations
     { id: 12, category: "social", subcategory: "anniversary", src: img18, span: "large", label: "Birthday Glam" },
-    { id: 13, category: "social", subcategory: "anniversary", src: img17, span: "large", label: "Golden Anniversary" },
+
     // CORPORATE EVENTS - Brand Launches
-    { id: 14, category: "corporate", subcategory: "brand launch", src: img2, span: "wide", label: "Brand Launch" },
-    { id: 15, category: "corporate", subcategory: "brand launch", src: img14, span: "large", label: "Product Launch" },
+   
+
     // CORPORATE EVENTS - Networking Events
-    { id: 16, category: "corporate", subcategory: "networking", src: img2, span: "wide", label: "Networking Event" },
-    { id: 17, category: "corporate", subcategory: "networking", src: img8, span: "large", label: "Industry Mixer" },
-    // CORPORATE EVENTS - Conferences
     { id: 18, category: "corporate", subcategory: "conference", src: img2, span: "wide", label: "Executive Conference" },
-    { id: 19, category: "corporate", subcategory: "conference", src: img9, span: "large", label: "Leadership Summit" },
+
     // CORPORATE EVENTS - Team Experiences
-    { id: 20, category: "corporate", subcategory: "team experience", src: img3, span: "wide", label: "Team Building" },
-    { id: 21, category: "corporate", subcategory: "team experience", src: img10, span: "large", label: "Corporate Retreat" },
+    { id: 21, category: "corporate", subcategory: "team experience", src: img20, span: "large", label: "Corporate Retreat" },
+    { id: 20, category: "corporate", subcategory: "team experience", src: img3, span: "large", label: "Team Building" },
     // CORPORATE EVENTS - End of Year Celebrations
-    { id: 22, category: "corporate", subcategory: "eoy celebration", src: img6, span: "wide", label: "End of Year Gala" },
-    { id: 23, category: "corporate", subcategory: "eoy celebration", src: img11, span: "large", label: "Holiday Celebration" },
+
   ];
 
   const subcategories = {
     social: [
       { key: "weddings", display: "Weddings" },
       { key: "birthday", display: "Birthday Celebrations" },
-      { key: "Baby Unveiling", display: "Baby Unveiling" },
+     
       { key: "private dinner", display: "Private Dinners" },
       { key: "engagement", display: "Engagement Parties" },
-      { key: "anniversary", display: "Anniversary Celebrations" },
+      // { key: "anniversary", display: "Anniversary Celebrations" },
     ],
     corporate: [
-      { key: "brand launch", display: "Brand Launches" },
-      { key: "networking", display: "Networking Events" },
-      { key: "conference", display: "Conferences" },
-      { key: "team experience", display: "Team Experiences" },
-      { key: "eoy celebration", display: "End of Year Celebrations" },
+      // { key: "brand launch", display: "Brand Launches" },
+      // { key: "networking", display: "Networking Events" },
+      // { key: "conference", display: "Conferences" },
+      // { key: "team experience", display: "Team Experiences" },
+      // { key: "eoy celebration", display: "End of Year Celebrations" },
     ],
   };
 
@@ -572,7 +571,7 @@ function Home() {
       </section>
 
       {/* ================================================================
-          CONSULTATION
+          CONSULTATION — UPDATED WITH CUSTOM BUDGET INPUT (GHS)
       ================================================================ */}
       <section className="consultation-section" id="consultation">
         <div className="consultation-wrapper">
@@ -620,16 +619,26 @@ function Home() {
               <div className="form-row">
                 <div className="form-group"><label>Event Location</label><input type="text" name="Event Location" placeholder="City, Venue, or TBD" /></div>
                 <div className="form-group">
-                  <label>Estimated Budget Range</label>
-                  <select name="Budget Range" defaultValue="">
-                    <option value="" disabled>Select range</option>
-                    <option value="5k-10k">$5,000 – $10,000</option>
-                    <option value="10k-25k">$10,000 – $25,000</option>
-                    <option value="25k-50k">$25,000 – $50,000</option>
-                    <option value="50k-100k">$50,000 – $100,000</option>
-                    <option value="100k+">$100,000+</option>
-                    <option value="undisclosed">Prefer not to say</option>
-                  </select>
+                  <label>Estimated Budget Range (GHS)</label>
+                  <div className="budget-group">
+                    <select name="Budget Range" defaultValue="" className="budget-select">
+                      <option value="" disabled>Select a range</option>
+                      <option value="10k-15k">₵10,000 – ₵15,000</option>
+                      <option value="15k-25k">₵15,000 – ₵25,000</option>
+                      <option value="25k-50k">₵25,000 – ₵50,000</option>
+                      <option value="50k-100k">₵50,000 – ₵100,000</option>
+                      <option value="100k+">₵100,000+</option>
+                      <option value="undisclosed">Prefer not to say</option>
+                    </select>
+                    <span className="budget-divider">or</span>
+                    <input 
+                      type="text" 
+                      name="Custom Budget" 
+                      placeholder="Enter your budget (e.g., ₵12,000)" 
+                      className="budget-custom-input"
+                    />
+                  </div>
+                  <p className="budget-hint">Select a range above or enter your own budget in Ghana Cedis</p>
                 </div>
               </div>
             </fieldset>
