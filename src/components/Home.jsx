@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 import "../styles/global.css";
-import "../styles/Home.css";
+import "../styles/home.css";
 
 import img1 from "../images/he1.png";
 import img2 from "../images/gal3.png";
