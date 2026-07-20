@@ -4,7 +4,7 @@ const resend = new Resend(process.env.RESEND_MAIL_API_KEY);
 
 const RECIPIENT_EMAILS = [
   "escapeeventsgh@gmail.com",
-  "collinsafako@gmail.com",
+  "afakocollins@gmail.com",
 ];
 
 const FROM_EMAIL =
