@@ -206,16 +206,25 @@ function Home() {
     setFormStatus("sending");
 
     const form = consultationFormRef.current;
-    if (!form) return;
+    if (!form) {
+      setFormStatus("error");
+      return;
+    }
 
     const formData = new FormData(form);
-    formData.append("Services Interested In", selectedServices.join(", ") || "None selected");
+    const payload = Object.fromEntries(formData.entries());
+
+    payload["Services Interested In"] =
+      selectedServices.join(", ") || "None selected";
 
     try {
-      const response = await fetch("https://formspree.io/f/xaqkgper", {
+      const response = await fetch("/.netlify/functions/consultation", {
         method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -589,11 +598,11 @@ function Home() {
               <div className="form-row">
                 <div className="form-group">
                   <label>Preferred Consultation Date</label>
-                  <input type="date" name="Preferred Consultation Date" />
+                  <input type="date" name="Preferred Consultation Date" form="consultation-form" />
                 </div>
                 <div className="form-group">
                   <label>Preferred Time</label>
-                  <select name="Preferred Consultation Time" defaultValue="">
+                  <select name="Preferred Consultation Time" defaultValue="" form="consultation-form">
                     <option value="" disabled>Select a time</option>
                     <option value="morning">Morning (9am – 12pm)</option>
                     <option value="afternoon">Afternoon (12pm – 4pm)</option>
@@ -603,7 +612,7 @@ function Home() {
               </div>
             </motion.div>
           </div>
-          <motion.form className="consultation-form" ref={consultationFormRef} onSubmit={handleSubmit} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8, delay: 0.3 }}>
+          <motion.form id="consultation-form" className="consultation-form" ref={consultationFormRef} onSubmit={handleSubmit} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8, delay: 0.3 }}>
             <fieldset className="form-fieldset">
               <legend className="form-legend">Client Information</legend>
               <div className="form-row">
